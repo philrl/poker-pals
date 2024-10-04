@@ -26,10 +26,17 @@ function App() {
       <div>
         {currentMonth ? (
           <>
-            <Chart stackData={data[currentMonth]} />
+            <Chart stackData={data[currentMonth].stacks} />
           </>
         ) : null}
       </div>
+      <ul>
+        <li>Hands: {data[currentMonth].hands}</li>
+        <li>Flops: {data[currentMonth].flops}</li>
+        <li>Turns: {data[currentMonth].turns}</li>
+        <li>Rivers: {data[currentMonth].rivers}</li>
+        <li>All Ins: {data[currentMonth].allIns}</li>
+      </ul>
     </>
   );
 }
