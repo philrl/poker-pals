@@ -16,6 +16,11 @@ type StackData = {
   at: Date | string;
 };
 
+type Pot = {
+  name: string;
+  pot: number;
+};
+
 type GameData = {
   stacks: StackData[];
   hands: number;
@@ -23,13 +28,25 @@ type GameData = {
   turns: number;
   rivers: number;
   allIns: number;
+  largestPots: Pot[];
 };
 const duckDbRowsSchema = z.array(pokerNowFormatSchema);
 
 async function getStacks(db: Database, csvFilePath: string) {
-  return db.all(
+  const rows = await db.all(
     `select * from read_csv_auto( '${csvFilePath}' ) where entry like 'Player stacks:%' order by at`,
   );
+  const pokerNowRows = duckDbRowsSchema.parse(rows);
+  return pokerNowRows.flatMap(({ entry, at }) => {
+    return entry
+      .substring('"Player stacks:'.length)
+      .split("|")
+      .map((str) => {
+        const [, name, amount] =
+          /#\d+ "(.*) @ .{10}" \((\d+)\)/.exec(str.trim()) || [];
+        return { name, amount: parseInt(amount, 10), at };
+      });
+  });
 }
 
 async function getHands(db: Database, csvFilePath: string) {
@@ -71,6 +88,20 @@ async function getAllins(db: Database, csvFilePath: string): Promise<number> {
   return z.number().parse(parseInt(allIns, 10));
 }
 
+async function getLargestPots(n: number, db: Database, csvFilePath: string) {
+  const rows = await db.all(
+    `select * from read_csv_auto( '${csvFilePath}' ) where entry like '%collected%' order by at`,
+  );
+  const pokerNowRows = duckDbRowsSchema.parse(rows);
+  return pokerNowRows
+    .map(({ entry }) => {
+      const [, name, pot] =
+        /"(\w+) @ \S{10}" collected (\d+) from pot.*/.exec(entry) || [];
+      return { name, pot: parseInt(pot, 10) };
+    })
+    .toSorted((a, b) => b.pot - a.pot)
+    .slice(0, n);
+}
 function makeOutput(data: Record<string, GameData>): string {
   return `// THIS FILE WAS AUTO GENERATED. EDIT AT YOUR OWN RISK
 export type PlayerStackData = {
@@ -78,6 +109,12 @@ export type PlayerStackData = {
   amount: number;
   at: Date | string;
 };
+
+type Pot = {
+  name: string;
+  pot: number;
+};
+
 export type GameData = {
   stacks: PlayerStackData[];
   hands: number;
@@ -85,6 +122,7 @@ export type GameData = {
   turns: number;
   rivers: number;
   allIns: number;
+  largestPots: Pot[];
 };
 export type Games = Record<string, GameData>
 
@@ -97,30 +135,22 @@ async function generateStackData(): Promise<Record<string, GameData>> {
   const db = await Database.create(":memory:");
   const output: Record<string, GameData> = {};
   for (const file of files) {
-    const rows = await getStacks(db, DIR + file);
+    const stacks = await getStacks(db, DIR + file);
     const hands = await getHands(db, DIR + file);
     const flops = await getFlops(db, DIR + file);
     const turns = await getTurns(db, DIR + file);
     const rivers = await getRivers(db, DIR + file);
     const allIns = await getAllins(db, DIR + file);
-    const pokerNowRows = duckDbRowsSchema.parse(rows);
-    const parsedData = pokerNowRows.flatMap(({ entry, at }) => {
-      return entry
-        .substring('"Player stacks:'.length)
-        .split("|")
-        .map((str) => {
-          const [, name, amount] =
-            /#\d+ "(.*) @ .{10}" \((\d+)\)/.exec(str.trim()) || [];
-          return { name, amount: parseInt(amount, 10), at };
-        });
-    });
+    const largestPots = await getLargestPots(10, db, DIR + file);
+
     output[file.split(".")[0]] = {
-      stacks: parsedData,
+      stacks,
       hands,
       flops,
       turns,
       rivers,
       allIns,
+      largestPots,
     };
   }
   return output;

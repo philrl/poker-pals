@@ -4,6 +4,12 @@ export type PlayerStackData = {
   amount: number;
   at: Date | string;
 };
+
+type Pot = {
+  name: string;
+  pot: number;
+};
+
 export type GameData = {
   stacks: PlayerStackData[];
   hands: number;
@@ -11,6 +17,7 @@ export type GameData = {
   turns: number;
   rivers: number;
   allIns: number;
+  largestPots: Pot[];
 };
 export type Games = Record<string, GameData>;
 
@@ -3898,6 +3905,48 @@ export const data: Games = {
     turns: 108,
     rivers: 81,
     allIns: 16,
+    largestPots: [
+      {
+        name: "Iain",
+        pot: 864,
+      },
+      {
+        name: "Iain",
+        pot: 804,
+      },
+      {
+        name: "Jeremy",
+        pot: 548,
+      },
+      {
+        name: "Iain",
+        pot: 276,
+      },
+      {
+        name: "Iain",
+        pot: 262,
+      },
+      {
+        name: "Robbie",
+        pot: 252,
+      },
+      {
+        name: "Iain",
+        pot: 246,
+      },
+      {
+        name: "Jeremy",
+        pot: 240,
+      },
+      {
+        name: "Jeremy",
+        pot: 240,
+      },
+      {
+        name: "Jeremy",
+        pot: 240,
+      },
+    ],
   },
   july: {
     stacks: [
@@ -8927,6 +8976,48 @@ export const data: Games = {
     turns: 151,
     rivers: 125,
     allIns: 26,
+    largestPots: [
+      {
+        name: "Evan",
+        pot: 1040,
+      },
+      {
+        name: "Evan",
+        pot: 988,
+      },
+      {
+        name: "Evan",
+        pot: 800,
+      },
+      {
+        name: "Evan",
+        pot: 560,
+      },
+      {
+        name: "Evan",
+        pot: 480,
+      },
+      {
+        name: "Evan",
+        pot: 367,
+      },
+      {
+        name: "Phil",
+        pot: 354,
+      },
+      {
+        name: "Phil",
+        pot: 346,
+      },
+      {
+        name: "Beauch",
+        pot: 300,
+      },
+      {
+        name: "Phil",
+        pot: 300,
+      },
+    ],
   },
   september: {
     stacks: [
@@ -13051,5 +13142,47 @@ export const data: Games = {
     turns: 105,
     rivers: 77,
     allIns: 22,
+    largestPots: [
+      {
+        name: "JPo",
+        pot: 686,
+      },
+      {
+        name: "EF",
+        pot: 500,
+      },
+      {
+        name: "Phil",
+        pot: 376,
+      },
+      {
+        name: "EF",
+        pot: 360,
+      },
+      {
+        name: "Pete",
+        pot: 329,
+      },
+      {
+        name: "EF",
+        pot: 280,
+      },
+      {
+        name: "Phil",
+        pot: 280,
+      },
+      {
+        name: "Phil",
+        pot: 260,
+      },
+      {
+        name: "JPo",
+        pot: 240,
+      },
+      {
+        name: "EF",
+        pot: 240,
+      },
+    ],
   },
 };

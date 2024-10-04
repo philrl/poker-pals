@@ -30,13 +30,29 @@ function App() {
           </>
         ) : null}
       </div>
-      <ul>
-        <li>Hands: {data[currentMonth].hands}</li>
-        <li>Flops: {data[currentMonth].flops}</li>
-        <li>Turns: {data[currentMonth].turns}</li>
-        <li>Rivers: {data[currentMonth].rivers}</li>
-        <li>All Ins: {data[currentMonth].allIns}</li>
-      </ul>
+
+      <div className="data-container">
+        <div>
+          <strong>Match Stats:</strong>
+          <ul>
+            <li>Hands: {data[currentMonth].hands}</li>
+            <li>Flops: {data[currentMonth].flops}</li>
+            <li>Turns: {data[currentMonth].turns}</li>
+            <li>Rivers: {data[currentMonth].rivers}</li>
+            <li>All Ins: {data[currentMonth].allIns}</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Largest Pots:</strong>
+          <ul>
+            {data[currentMonth].largestPots.map((pot) => (
+              <li>
+                {pot.name}: {pot.pot}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </>
   );
 }
