@@ -79,7 +79,7 @@ export type PlayerStackData = {
   at: Date | string;
 };
 export type GameData = {
-  stacks: StackData[];
+  stacks: PlayerStackData[];
   hands: number;
   flops: number;
   turns: number;
