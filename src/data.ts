@@ -5,9 +5,14 @@ export type PlayerStackData = {
   at: Date | string;
 };
 
-type Pot = {
+export type Pot = {
   name: string;
   pot: number;
+};
+
+export type Exit = {
+  name: string;
+  at: Date | string;
 };
 
 export type GameData = {
@@ -18,6 +23,7 @@ export type GameData = {
   rivers: number;
   allIns: number;
   largestPots: Pot[];
+  exits: Exit[];
 };
 export type Games = Record<string, GameData>;
 
@@ -3945,6 +3951,32 @@ export const data: Games = {
       {
         name: "Jeremy",
         pot: 240,
+      },
+    ],
+    exits: [
+      {
+        name: "Jeremy",
+        at: "2024-06-23T05:19:45.541Z",
+      },
+      {
+        name: "Robbie",
+        at: "2024-06-23T04:58:39.486Z",
+      },
+      {
+        name: "Ev",
+        at: "2024-06-23T04:37:05.459Z",
+      },
+      {
+        name: "Phil",
+        at: "2024-06-23T04:12:55.445Z",
+      },
+      {
+        name: "Andrew",
+        at: "2024-06-23T04:07:53.935Z",
+      },
+      {
+        name: "deth",
+        at: "2024-06-23T03:32:05.975Z",
       },
     ],
   },
@@ -9018,6 +9050,48 @@ export const data: Games = {
         pot: 300,
       },
     ],
+    exits: [
+      {
+        name: "Phil",
+        at: "2024-07-20T05:44:13.964Z",
+      },
+      {
+        name: "Beauch",
+        at: "2024-07-20T05:32:15.879Z",
+      },
+      {
+        name: "Pete",
+        at: "2024-07-20T05:29:10.624Z",
+      },
+      {
+        name: "dethy",
+        at: "2024-07-20T05:09:02.133Z",
+      },
+      {
+        name: "Andrew",
+        at: "2024-07-20T05:05:56.603Z",
+      },
+      {
+        name: "Iain",
+        at: "2024-07-20T05:05:56.603Z",
+      },
+      {
+        name: "Robbie",
+        at: "2024-07-20T04:30:57.586Z",
+      },
+      {
+        name: "Jeremy",
+        at: "2024-07-20T04:28:13.715Z",
+      },
+      {
+        name: "Apples",
+        at: "2024-07-20T03:50:41.091Z",
+      },
+      {
+        name: "Alec",
+        at: "2024-07-20T03:26:06.351Z",
+      },
+    ],
   },
   september: {
     stacks: [
@@ -13182,6 +13256,28 @@ export const data: Games = {
       {
         name: "EF",
         pot: 240,
+      },
+    ],
+    exits: [
+      {
+        name: "Pete",
+        at: "2024-09-21T05:26:57.654Z",
+      },
+      {
+        name: "Coach",
+        at: "2024-09-21T04:49:42.974Z",
+      },
+      {
+        name: "Robbie",
+        at: "2024-09-21T03:57:16.889Z",
+      },
+      {
+        name: "Beauch",
+        at: "2024-09-21T03:27:59.582Z",
+      },
+      {
+        name: "Alec",
+        at: "2024-09-21T02:45:26.886Z",
       },
     ],
   },

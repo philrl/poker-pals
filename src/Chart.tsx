@@ -26,7 +26,7 @@ export default function Chart({
     // TODO: This is an abomination. Clean up and use actual SVG components.
 
     const x = d3
-      .scaleUtc()
+      .scaleTime()
       .domain(
         d3
           .extent(stackData, (d) => new Date(d.at))

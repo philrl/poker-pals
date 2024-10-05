@@ -52,6 +52,16 @@ function App() {
             ))}
           </ul>
         </div>
+        <div>
+          <strong>Exit times</strong>
+          <ul>
+            {data[currentMonth].exits.map((exit) => (
+              <li>
+                {exit.name}: {new Date(exit.at).toLocaleTimeString()}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </>
   );

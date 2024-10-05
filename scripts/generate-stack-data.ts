@@ -21,6 +21,11 @@ type Pot = {
   pot: number;
 };
 
+type Exit = {
+  name: string;
+  at: Date | string;
+};
+
 type GameData = {
   stacks: StackData[];
   hands: number;
@@ -29,6 +34,7 @@ type GameData = {
   rivers: number;
   allIns: number;
   largestPots: Pot[];
+  exits: Exit[];
 };
 const duckDbRowsSchema = z.array(pokerNowFormatSchema);
 
@@ -102,6 +108,27 @@ async function getLargestPots(n: number, db: Database, csvFilePath: string) {
     .toSorted((a, b) => b.pot - a.pot)
     .slice(0, n);
 }
+
+async function getExitTimes(db: Database, csvFilePath: string) {
+  const rows = await db.all(
+    `select * from read_csv_auto( '${csvFilePath}' ) where entry like '%quits the game with a stack of 0.' order by at`,
+  );
+  const pokerNowRows = duckDbRowsSchema.parse(rows);
+  return pokerNowRows
+    .map(({ entry, at }) => {
+      const [, name] =
+        /The player "(\S+) @ \S{10}" quits the game with a stack of 0./.exec(
+          entry,
+        ) || [];
+      return { name, at };
+    })
+    .toSorted((a, b) => {
+      const aDate = typeof a.at === "string" ? new Date(a.at) : a.at;
+      const bDate = typeof b.at === "string" ? new Date(b.at) : b.at;
+      return bDate.valueOf() - aDate.valueOf();
+    });
+}
+
 function makeOutput(data: Record<string, GameData>): string {
   return `// THIS FILE WAS AUTO GENERATED. EDIT AT YOUR OWN RISK
 export type PlayerStackData = {
@@ -110,10 +137,15 @@ export type PlayerStackData = {
   at: Date | string;
 };
 
-type Pot = {
+export type Pot = {
   name: string;
   pot: number;
 };
+
+export type Exit = {
+    name: string;
+    at: Date | string;
+}
 
 export type GameData = {
   stacks: PlayerStackData[];
@@ -123,6 +155,7 @@ export type GameData = {
   rivers: number;
   allIns: number;
   largestPots: Pot[];
+  exits: Exit[];
 };
 export type Games = Record<string, GameData>
 
@@ -142,7 +175,7 @@ async function generateStackData(): Promise<Record<string, GameData>> {
     const rivers = await getRivers(db, DIR + file);
     const allIns = await getAllins(db, DIR + file);
     const largestPots = await getLargestPots(10, db, DIR + file);
-
+    const exits = await getExitTimes(db, DIR + file);
     output[file.split(".")[0]] = {
       stacks,
       hands,
@@ -151,6 +184,7 @@ async function generateStackData(): Promise<Record<string, GameData>> {
       rivers,
       allIns,
       largestPots,
+      exits,
     };
   }
   return output;
