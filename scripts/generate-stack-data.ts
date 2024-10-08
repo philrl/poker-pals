@@ -10,9 +10,10 @@ const pokerNowFormatSchema = z.object({
   order: z.bigint().or(z.string()),
 });
 
+const duckDbRowsSchema = z.array(pokerNowFormatSchema);
+
 type StackData = {
-  name: string;
-  amount: number;
+  stacks: { [name: string]: number };
   at: Date | string;
 };
 
@@ -35,23 +36,28 @@ type GameData = {
   allIns: number;
   largestPots: Pot[];
   exits: Exit[];
+  players: string[];
+  potsWon: Record<string, number>;
 };
-const duckDbRowsSchema = z.array(pokerNowFormatSchema);
 
 async function getStacks(db: Database, csvFilePath: string) {
   const rows = await db.all(
     `select * from read_csv_auto( '${csvFilePath}' ) where entry like 'Player stacks:%' order by at`,
   );
   const pokerNowRows = duckDbRowsSchema.parse(rows);
-  return pokerNowRows.flatMap(({ entry, at }) => {
+  return pokerNowRows.map(({ entry, at }) => {
     return entry
       .substring('"Player stacks:'.length)
       .split("|")
-      .map((str) => {
-        const [, name, amount] =
-          /#\d+ "(.*) @ .{10}" \((\d+)\)/.exec(str.trim()) || [];
-        return { name, amount: parseInt(amount, 10), at };
-      });
+      .reduce<StackData>(
+        (prev: StackData, curr: string) => {
+          const [, name, amount] =
+            /#\d+ "(.*) @ .{10}" \((\d+)\)/.exec(curr.trim()) || [];
+          prev.stacks[name] = parseInt(amount, 10);
+          return prev;
+        },
+        { at, stacks: {} },
+      );
   });
 }
 
@@ -94,11 +100,18 @@ async function getAllins(db: Database, csvFilePath: string): Promise<number> {
   return z.number().parse(parseInt(allIns, 10));
 }
 
-async function getLargestPots(n: number, db: Database, csvFilePath: string) {
+async function getCollectedPots(
+  db: Database,
+  csvFilePath: string,
+): Promise<z.infer<typeof duckDbRowsSchema>> {
   const rows = await db.all(
     `select * from read_csv_auto( '${csvFilePath}' ) where entry like '%collected%' order by at`,
   );
-  const pokerNowRows = duckDbRowsSchema.parse(rows);
+  return duckDbRowsSchema.parse(rows);
+}
+
+async function getLargestPots(n: number, db: Database, csvFilePath: string) {
+  const pokerNowRows = await getCollectedPots(db, csvFilePath);
   return pokerNowRows
     .map(({ entry }) => {
       const [, name, pot] =
@@ -107,6 +120,17 @@ async function getLargestPots(n: number, db: Database, csvFilePath: string) {
     })
     .toSorted((a, b) => b.pot - a.pot)
     .slice(0, n);
+}
+
+async function getHandsWon(db: Database, csvFilePath: string) {
+  const pokerNowRows = await getCollectedPots(db, csvFilePath);
+  return pokerNowRows.reduce((prev: Record<string, number>, { entry }) => {
+    const [, name] =
+      /"(\w+) @ \S{10}" collected (\d+) from pot.*/.exec(entry) || [];
+
+    prev[name] ? (prev[name] += 1) : (prev[name] = 1);
+    return prev;
+  }, {});
 }
 
 async function getExitTimes(db: Database, csvFilePath: string) {
@@ -129,11 +153,30 @@ async function getExitTimes(db: Database, csvFilePath: string) {
     });
 }
 
+async function getPlayers(
+  db: Database,
+  csvFilePath: string,
+): Promise<Set<string>> {
+  const rows = await db.all(
+    `select * from read_csv_auto( '${csvFilePath}' ) where entry like '%joined the game with a stack of%' order by at`,
+  );
+  const pokerNowRows = duckDbRowsSchema.parse(rows);
+
+  const players = new Set<string>();
+  pokerNowRows.forEach(({ entry }) => {
+    const [, name] =
+      /The player "(\S+) @ \S{10}" joined the game with a stack of \d+/.exec(
+        entry,
+      ) || [];
+    players.add(name);
+  });
+  return players;
+}
+
 function makeOutput(data: Record<string, GameData>): string {
   return `// THIS FILE WAS AUTO GENERATED. EDIT AT YOUR OWN RISK
 export type PlayerStackData = {
-  name: string;
-  amount: number;
+  stacks: { [name: string]: number };
   at: Date | string;
 };
 
@@ -156,6 +199,8 @@ export type GameData = {
   allIns: number;
   largestPots: Pot[];
   exits: Exit[];
+  players: string[];
+  potsWon: Record<string, number>
 };
 export type Games = Record<string, GameData>
 
@@ -176,6 +221,9 @@ async function generateStackData(): Promise<Record<string, GameData>> {
     const allIns = await getAllins(db, DIR + file);
     const largestPots = await getLargestPots(10, db, DIR + file);
     const exits = await getExitTimes(db, DIR + file);
+    const players = await getPlayers(db, DIR + file);
+    const potsWon = await getHandsWon(db, DIR + file);
+
     output[file.split(".")[0]] = {
       stacks,
       hands,
@@ -185,6 +233,8 @@ async function generateStackData(): Promise<Record<string, GameData>> {
       allIns,
       largestPots,
       exits,
+      potsWon,
+      players: Array.from(players),
     };
   }
   return output;

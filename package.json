@@ -7,17 +7,18 @@
   "scripts": {
     "dev": "bunx --bun vite",
     "generate-data": "bun run scripts/generate-stack-data.ts > src/data.ts",
-    "build": "bunx --bun vite build",
+    "build": "bun run lint && bun run type-check && bunx --bun vite build",
     "lint": "eslint .",
     "preview": "bunx --bun vite preview",
     "predeploy": "bun run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "type-check": "bun run tsc -b --noEmit"
   },
   "dependencies": {
-    "@types/d3": "^7.4.3",
-    "d3": "^7.9.0",
+    "@uidotdev/usehooks": "^2.4.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "recharts": "^2.12.7",
     "zod": "^3.23.8"
   },
   "devDependencies": {
@@ -33,7 +34,7 @@
     "gh-pages": "^6.1.1",
     "globals": "^15.9.0",
     "prettier": "^3.3.3",
-    "typescript": "^5.5.3",
+    "typescript": "^5.6.2",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"
   }

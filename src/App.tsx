@@ -11,6 +11,8 @@ function App() {
     <>
       <div>
         <h1>Poker Pals Chip Stacks</h1>
+      </div>
+      <div>
         <label htmlFor="months">Choose a month: </label>
         <select
           name="months"
@@ -25,9 +27,10 @@ function App() {
       </div>
       <div>
         {currentMonth ? (
-          <>
-            <Chart stackData={data[currentMonth].stacks} />
-          </>
+          <Chart
+            players={data[currentMonth].players}
+            stackData={data[currentMonth].stacks}
+          />
         ) : null}
       </div>
 
@@ -45,18 +48,30 @@ function App() {
         <div>
           <strong>Largest Pots:</strong>
           <ul>
-            {data[currentMonth].largestPots.map((pot) => (
-              <li>
+            {data[currentMonth].largestPots.map((pot, idx) => (
+              <li key={`${pot.name}-${pot.pot}-${idx}`}>
                 {pot.name}: {pot.pot}
               </li>
             ))}
           </ul>
         </div>
         <div>
+          <strong>Pots won</strong>
+          <ul>
+            {Object.entries(data[currentMonth].potsWon)
+              .toSorted(([, a], [, b]) => b - a)
+              .map(([player, pots]) => (
+                <li key={player}>
+                  {player}: {pots}
+                </li>
+              ))}
+          </ul>
+        </div>
+        <div>
           <strong>Exit times</strong>
           <ul>
             {data[currentMonth].exits.map((exit) => (
-              <li>
+              <li key={exit.name}>
                 {exit.name}: {new Date(exit.at).toLocaleTimeString()}
               </li>
             ))}
