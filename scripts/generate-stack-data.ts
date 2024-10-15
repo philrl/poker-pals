@@ -173,6 +173,38 @@ async function getPlayers(
   return players;
 }
 
+async function generateStackData(): Promise<Record<string, GameData>> {
+  const files = await readdir(DIR);
+  const db = await Database.create(":memory:");
+  const output: Record<string, GameData> = {};
+  for (const file of files) {
+    const stacks = await getStacks(db, DIR + file);
+    const hands = await getHands(db, DIR + file);
+    const flops = await getFlops(db, DIR + file);
+    const turns = await getTurns(db, DIR + file);
+    const rivers = await getRivers(db, DIR + file);
+    const allIns = await getAllins(db, DIR + file);
+    const largestPots = await getLargestPots(10, db, DIR + file);
+    const exits = await getExitTimes(db, DIR + file);
+    const players = await getPlayers(db, DIR + file);
+    const potsWon = await getHandsWon(db, DIR + file);
+
+    output[file.split(".")[0]] = {
+      stacks,
+      hands,
+      flops,
+      turns,
+      rivers,
+      allIns,
+      largestPots,
+      exits,
+      potsWon,
+      players: Array.from(players),
+    };
+  }
+  return output;
+}
+
 function makeOutput(data: Record<string, GameData>): string {
   return `// THIS FILE WAS AUTO GENERATED. EDIT AT YOUR OWN RISK
 export type PlayerStackData = {
@@ -206,38 +238,6 @@ export type Games = Record<string, GameData>
 
 export const data: Games = ${JSON.stringify(data, null, 2)};
 `;
-}
-
-async function generateStackData(): Promise<Record<string, GameData>> {
-  const files = await readdir(DIR);
-  const db = await Database.create(":memory:");
-  const output: Record<string, GameData> = {};
-  for (const file of files) {
-    const stacks = await getStacks(db, DIR + file);
-    const hands = await getHands(db, DIR + file);
-    const flops = await getFlops(db, DIR + file);
-    const turns = await getTurns(db, DIR + file);
-    const rivers = await getRivers(db, DIR + file);
-    const allIns = await getAllins(db, DIR + file);
-    const largestPots = await getLargestPots(10, db, DIR + file);
-    const exits = await getExitTimes(db, DIR + file);
-    const players = await getPlayers(db, DIR + file);
-    const potsWon = await getHandsWon(db, DIR + file);
-
-    output[file.split(".")[0]] = {
-      stacks,
-      hands,
-      flops,
-      turns,
-      rivers,
-      allIns,
-      largestPots,
-      exits,
-      potsWon,
-      players: Array.from(players),
-    };
-  }
-  return output;
 }
 
 generateStackData()

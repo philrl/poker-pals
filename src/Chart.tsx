@@ -54,7 +54,11 @@ export default function Chart({
   ];
 
   const chartWidth = clamp((width || 0) - marginLeft - marginRight, 350, 1280);
-  const chartHeight = clamp((chartWidth * 3) / 4, 300, height || 900);
+  const chartHeight = clamp(
+    (chartWidth * 3) / 4,
+    300,
+    Math.min(height || 850, 850),
+  );
 
   return (
     <ResponsiveContainer height={chartHeight} width={chartWidth}>
@@ -69,7 +73,12 @@ export default function Chart({
       >
         <XAxis
           dataKey="at"
-          tickFormatter={(value: Date) => value.toLocaleTimeString()}
+          tickFormatter={(value: Date) =>
+            value.toLocaleTimeString("EN-US", {
+              timeStyle: "short",
+              hourCycle: "h24",
+            })
+          }
         />
         <YAxis />
         <CartesianGrid stroke="#eee" strokeDasharray="5 5" />

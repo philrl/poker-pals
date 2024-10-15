@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "bunx --bun vite",
-    "generate-data": "bun run scripts/generate-stack-data.ts > src/data.ts",
-    "build": "bun run lint && bun run type-check && bunx --bun vite build",
+    "generate-data": "bun run scripts/generate-stack-data.ts > src/data.ts && bun run prettier src/data.ts --write",
+    "build": "bun run generate-data && bun run lint && bun run type-check && bunx --bun vite build",
     "lint": "eslint .",
     "preview": "bunx --bun vite preview",
     "predeploy": "bun run build",
@@ -28,14 +28,14 @@
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "duckdb-async": "^1.1.1",
-    "eslint": "^9.9.0",
+    "eslint": "^9.12.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "gh-pages": "^6.1.1",
     "globals": "^15.9.0",
     "prettier": "^3.3.3",
     "typescript": "^5.6.2",
-    "typescript-eslint": "^8.0.1",
+    "typescript-eslint": "^8.9.0",
     "vite": "^5.4.1"
   }
 }
