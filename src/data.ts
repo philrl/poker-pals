@@ -3921,6 +3921,1160 @@ export const data: Games = {
       "dethy",
     ],
   },
+  november: {
+    stacks: [
+      {
+        at: "2024-11-24T03:02:12.969Z",
+        stacks: {
+          Beauch: 200,
+          Alec: 200,
+          Drew: 200,
+          iain: 200,
+          deth: 200,
+          Phil: 200,
+          JPo: 200,
+        },
+      },
+      {
+        at: "2024-11-24T03:04:25.730Z",
+        stacks: {
+          Beauch: 200,
+          Alec: 194,
+          Drew: 200,
+          iain: 213,
+          deth: 199,
+          Phil: 194,
+          JPo: 200,
+          Pete: 200,
+        },
+      },
+      {
+        at: "2024-11-24T03:06:27.186Z",
+        stacks: {
+          Beauch: 198,
+          Alec: 192,
+          Drew: 198,
+          iain: 213,
+          deth: 199,
+          Phil: 202,
+          JPo: 198,
+          Pete: 200,
+        },
+      },
+      {
+        at: "2024-11-24T03:08:49.080Z",
+        stacks: {
+          Beauch: 198,
+          Alec: 245,
+          Drew: 192,
+          iain: 213,
+          deth: 199,
+          Phil: 162,
+          JPo: 197,
+          Pete: 194,
+        },
+      },
+      {
+        at: "2024-11-24T03:11:25.210Z",
+        stacks: {
+          Beauch: 196,
+          Alec: 245,
+          Drew: 199,
+          iain: 213,
+          deth: 195,
+          Phil: 162,
+          JPo: 197,
+          Pete: 193,
+        },
+      },
+      {
+        at: "2024-11-24T03:13:46.015Z",
+        stacks: {
+          Beauch: 194,
+          Alec: 241,
+          Drew: 195,
+          iain: 213,
+          deth: 211,
+          Phil: 160,
+          JPo: 195,
+          Pete: 191,
+        },
+      },
+      {
+        at: "2024-11-24T03:16:01.329Z",
+        stacks: {
+          Beauch: 194,
+          Alec: 269,
+          Drew: 193,
+          iain: 213,
+          deth: 189,
+          Phil: 160,
+          JPo: 195,
+          Pete: 187,
+        },
+      },
+      {
+        at: "2024-11-24T03:18:30.402Z",
+        stacks: {
+          Beauch: 194,
+          Alec: 265,
+          Drew: 189,
+          iain: 211,
+          deth: 185,
+          Phil: 160,
+          JPo: 209,
+          Pete: 187,
+        },
+      },
+      {
+        at: "2024-11-24T03:20:45.941Z",
+        stacks: {
+          Beauch: 194,
+          Alec: 259,
+          Drew: 204,
+          iain: 210,
+          deth: 183,
+          Phil: 160,
+          JPo: 209,
+          Pete: 181,
+        },
+      },
+      {
+        at: "2024-11-24T03:23:50.409Z",
+        stacks: {
+          Beauch: 120,
+          Alec: 255,
+          Drew: 204,
+          iain: 210,
+          deth: 273,
+          Phil: 150,
+          JPo: 209,
+          Pete: 179,
+        },
+      },
+      {
+        at: "2024-11-24T03:27:09.923Z",
+        stacks: {
+          Beauch: 116,
+          Alec: 251,
+          Drew: 200,
+          iain: 210,
+          deth: 269,
+          Phil: 130,
+          JPo: 245,
+          Pete: 179,
+        },
+      },
+      {
+        at: "2024-11-24T03:30:19.889Z",
+        stacks: {
+          Beauch: 116,
+          Alec: 237,
+          Drew: 200,
+          iain: 206,
+          deth: 304,
+          Phil: 126,
+          JPo: 241,
+          Pete: 170,
+        },
+      },
+      {
+        at: "2024-11-24T03:32:47.562Z",
+        stacks: {
+          Beauch: 114,
+          Alec: 273,
+          Drew: 200,
+          iain: 202,
+          deth: 304,
+          Phil: 126,
+          JPo: 237,
+          Pete: 144,
+        },
+      },
+      {
+        at: "2024-11-24T03:35:42.264Z",
+        stacks: {
+          Beauch: 162,
+          Alec: 257,
+          Drew: 196,
+          iain: 202,
+          deth: 304,
+          Phil: 122,
+          JPo: 213,
+          Pete: 144,
+        },
+      },
+      {
+        at: "2024-11-24T03:37:41.903Z",
+        stacks: {
+          Beauch: 162,
+          Alec: 255,
+          Drew: 197,
+          iain: 203,
+          deth: 304,
+          Phil: 122,
+          JPo: 213,
+          Pete: 144,
+        },
+      },
+      {
+        at: "2024-11-24T03:40:35.819Z",
+        stacks: {
+          Beauch: 162,
+          Alec: 223,
+          Drew: 189,
+          iain: 199,
+          deth: 272,
+          Phil: 198,
+          JPo: 213,
+          Pete: 144,
+        },
+      },
+      {
+        at: "2024-11-24T03:43:29.238Z",
+        stacks: {
+          Beauch: 162,
+          Alec: 271,
+          Drew: 189,
+          iain: 195,
+          deth: 268,
+          Phil: 162,
+          JPo: 213,
+          Pete: 140,
+        },
+      },
+      {
+        at: "2024-11-24T03:46:15.635Z",
+        stacks: {
+          Beauch: 162,
+          Alec: 271,
+          Drew: 225,
+          iain: 191,
+          deth: 264,
+          Phil: 154,
+          JPo: 213,
+          Pete: 120,
+        },
+      },
+      {
+        at: "2024-11-24T03:48:47.061Z",
+        stacks: {
+          Beauch: 162,
+          Alec: 271,
+          Drew: 253,
+          iain: 175,
+          deth: 264,
+          Phil: 150,
+          JPo: 209,
+          Pete: 116,
+        },
+      },
+      {
+        at: "2024-11-24T03:51:44.732Z",
+        stacks: {
+          Alec: 295,
+          Drew: 249,
+          iain: 175,
+          deth: 264,
+          Phil: 146,
+          JPo: 205,
+          Pete: 108,
+        },
+      },
+      {
+        at: "2024-11-24T03:52:55.809Z",
+        stacks: {
+          Alec: 305,
+          Drew: 249,
+          iain: 175,
+          deth: 264,
+          Phil: 142,
+          JPo: 201,
+          Pete: 106,
+        },
+      },
+      {
+        at: "2024-11-24T03:54:55.758Z",
+        stacks: {
+          Beauch: 158,
+          Alec: 301,
+          Drew: 289,
+          iain: 175,
+          deth: 264,
+          Phil: 142,
+          JPo: 201,
+          Pete: 70,
+        },
+      },
+      {
+        at: "2024-11-24T03:57:27.591Z",
+        stacks: {
+          Beauch: 152,
+          Alec: 359,
+          Drew: 257,
+          iain: 171,
+          deth: 260,
+          Phil: 142,
+          JPo: 189,
+          Pete: 70,
+        },
+      },
+      {
+        at: "2024-11-24T04:00:53.000Z",
+        stacks: {
+          Beauch: 152,
+          Alec: 351,
+          Drew: 253,
+          iain: 167,
+          deth: 284,
+          Phil: 134,
+          JPo: 189,
+          Pete: 70,
+        },
+      },
+      {
+        at: "2024-11-24T04:03:18.812Z",
+        stacks: {
+          Beauch: 152,
+          Alec: 323,
+          Drew: 249,
+          iain: 163,
+          deth: 280,
+          Phil: 178,
+          JPo: 189,
+          Pete: 66,
+        },
+      },
+      {
+        at: "2024-11-24T04:05:39.830Z",
+        stacks: {
+          Beauch: 152,
+          Alec: 335,
+          Drew: 249,
+          iain: 163,
+          deth: 280,
+          Phil: 172,
+          JPo: 183,
+          Pete: 66,
+        },
+      },
+      {
+        at: "2024-11-24T04:08:36.402Z",
+        stacks: {
+          Beauch: 152,
+          Alec: 305,
+          Drew: 249,
+          iain: 163,
+          deth: 274,
+          Phil: 220,
+          JPo: 177,
+          Pete: 60,
+        },
+      },
+      {
+        at: "2024-11-24T04:11:20.301Z",
+        stacks: {
+          Beauch: 146,
+          Alec: 293,
+          Drew: 249,
+          iain: 163,
+          deth: 274,
+          Phil: 298,
+          JPo: 177,
+        },
+      },
+      {
+        at: "2024-11-24T04:13:24.727Z",
+        stacks: {
+          Beauch: 143,
+          Alec: 281,
+          Drew: 249,
+          iain: 163,
+          deth: 262,
+          Phil: 298,
+          JPo: 204,
+        },
+      },
+      {
+        at: "2024-11-24T04:15:58.671Z",
+        stacks: {
+          Beauch: 143,
+          Alec: 278,
+          Drew: 237,
+          iain: 224,
+          deth: 262,
+          Phil: 264,
+          JPo: 192,
+        },
+      },
+      {
+        at: "2024-11-24T04:18:27.571Z",
+        stacks: {
+          Beauch: 143,
+          Alec: 278,
+          Drew: 234,
+          iain: 206,
+          deth: 232,
+          Phil: 315,
+          JPo: 192,
+        },
+      },
+      {
+        at: "2024-11-24T04:19:50.964Z",
+        stacks: {
+          Beauch: 143,
+          Alec: 278,
+          Drew: 234,
+          iain: 188,
+          deth: 250,
+          Phil: 315,
+          JPo: 192,
+        },
+      },
+      {
+        at: "2024-11-24T04:22:03.997Z",
+        stacks: {
+          Beauch: 137,
+          Alec: 278,
+          Drew: 264,
+          iain: 188,
+          deth: 280,
+          Phil: 309,
+          JPo: 144,
+        },
+      },
+      {
+        at: "2024-11-24T04:25:03.501Z",
+        stacks: {
+          Alec: 278,
+          Drew: 264,
+          iain: 337,
+          deth: 280,
+          Phil: 303,
+        },
+      },
+      {
+        at: "2024-11-24T04:26:49.484Z",
+        stacks: {
+          Alec: 212,
+          Drew: 264,
+          iain: 337,
+          deth: 346,
+          Phil: 303,
+          JPo: 138,
+        },
+      },
+      {
+        at: "2024-11-24T04:28:42.764Z",
+        stacks: {
+          Alec: 245,
+          Drew: 258,
+          iain: 337,
+          deth: 334,
+          Phil: 303,
+          JPo: 123,
+        },
+      },
+      {
+        at: "2024-11-24T04:30:16.299Z",
+        stacks: {
+          Alec: 245,
+          Drew: 252,
+          iain: 331,
+          deth: 334,
+          Phil: 315,
+          JPo: 123,
+        },
+      },
+      {
+        at: "2024-11-24T04:31:41.625Z",
+        stacks: {
+          Alec: 233,
+          Drew: 252,
+          iain: 328,
+          deth: 355,
+          Phil: 309,
+          JPo: 123,
+        },
+      },
+      {
+        at: "2024-11-24T04:34:01.851Z",
+        stacks: {
+          Alec: 305,
+          Drew: 252,
+          iain: 328,
+          deth: 343,
+          Phil: 249,
+          JPo: 123,
+        },
+      },
+      {
+        at: "2024-11-24T04:35:35.396Z",
+        stacks: {
+          Alec: 305,
+          iain: 328,
+          deth: 343,
+          Phil: 209,
+          JPo: 171,
+        },
+      },
+      {
+        at: "2024-11-24T04:37:09.724Z",
+        stacks: {
+          Alec: 289,
+          iain: 328,
+          deth: 391,
+          Phil: 193,
+          JPo: 155,
+        },
+      },
+      {
+        at: "2024-11-24T04:38:40.429Z",
+        stacks: {
+          Alec: 281,
+          iain: 320,
+          deth: 415,
+          Phil: 185,
+          JPo: 155,
+        },
+      },
+      {
+        at: "2024-11-24T04:39:46.363Z",
+        stacks: {
+          Alec: 281,
+          iain: 316,
+          deth: 417,
+          Phil: 187,
+          JPo: 155,
+        },
+      },
+      {
+        at: "2024-11-24T04:41:28.350Z",
+        stacks: {
+          Alec: 281,
+          iain: 316,
+          deth: 377,
+          Phil: 147,
+          JPo: 235,
+        },
+      },
+      {
+        at: "2024-11-24T04:42:21.173Z",
+        stacks: {
+          Alec: 265,
+          iain: 316,
+          deth: 377,
+          Phil: 143,
+          JPo: 255,
+        },
+      },
+      {
+        at: "2024-11-24T04:43:44.018Z",
+        stacks: {
+          Alec: 257,
+          iain: 316,
+          deth: 377,
+          Phil: 143,
+          JPo: 263,
+        },
+      },
+      {
+        at: "2024-11-24T04:45:33.339Z",
+        stacks: {
+          Alec: 265,
+          iain: 308,
+          deth: 377,
+          Phil: 143,
+          JPo: 263,
+        },
+      },
+      {
+        at: "2024-11-24T04:46:25.238Z",
+        stacks: {
+          Alec: 277,
+          iain: 304,
+          deth: 369,
+          Phil: 143,
+          JPo: 263,
+        },
+      },
+      {
+        at: "2024-11-24T04:48:22.906Z",
+        stacks: {
+          Alec: 277,
+          iain: 304,
+          deth: 361,
+          Phil: 111,
+          JPo: 303,
+        },
+      },
+      {
+        at: "2024-11-24T04:50:13.320Z",
+        stacks: {
+          Alec: 261,
+          iain: 280,
+          deth: 417,
+          Phil: 103,
+        },
+      },
+      {
+        at: "2024-11-24T04:50:43.410Z",
+        stacks: {
+          Alec: 261,
+          iain: 280,
+          deth: 417,
+          Phil: 103,
+        },
+      },
+      {
+        at: "2024-11-24T04:52:12.227Z",
+        stacks: {
+          Alec: 257,
+          iain: 300,
+          deth: 401,
+          Phil: 103,
+          JPo: 295,
+        },
+      },
+      {
+        at: "2024-11-24T04:53:35.061Z",
+        stacks: {
+          Alec: 285,
+          iain: 292,
+          deth: 393,
+          Phil: 95,
+          JPo: 291,
+        },
+      },
+      {
+        at: "2024-11-24T04:54:31.824Z",
+        stacks: {
+          Alec: 313,
+          iain: 284,
+          deth: 389,
+          Phil: 87,
+          JPo: 283,
+        },
+      },
+      {
+        at: "2024-11-24T04:56:12.198Z",
+        stacks: {
+          Alec: 225,
+          iain: 388,
+          deth: 389,
+          Phil: 79,
+          JPo: 275,
+        },
+      },
+      {
+        at: "2024-11-24T04:57:56.241Z",
+        stacks: {
+          Alec: 209,
+          iain: 388,
+          deth: 373,
+          JPo: 386,
+        },
+      },
+      {
+        at: "2024-11-24T04:58:35.931Z",
+        stacks: {
+          Alec: 217,
+          iain: 380,
+          deth: 373,
+          JPo: 386,
+        },
+      },
+      {
+        at: "2024-11-24T04:59:43.676Z",
+        stacks: {
+          Alec: 233,
+          iain: 372,
+          deth: 365,
+          JPo: 386,
+        },
+      },
+      {
+        at: "2024-11-24T05:01:45.274Z",
+        stacks: {
+          Alec: 209,
+          Drew: 244,
+          iain: 364,
+          deth: 421,
+          JPo: 362,
+        },
+      },
+      {
+        at: "2024-11-24T05:03:31.183Z",
+        stacks: {
+          Alec: 253,
+          Drew: 232,
+          iain: 364,
+          deth: 421,
+          JPo: 330,
+        },
+      },
+      {
+        at: "2024-11-24T05:05:03.073Z",
+        stacks: {
+          Alec: 249,
+          Drew: 208,
+          iain: 408,
+          deth: 405,
+          JPo: 330,
+        },
+      },
+      {
+        at: "2024-11-24T05:06:58.480Z",
+        stacks: {
+          Alec: 249,
+          Drew: 198,
+          iain: 398,
+          deth: 375,
+          JPo: 380,
+        },
+      },
+      {
+        at: "2024-11-24T05:08:26.280Z",
+        stacks: {
+          Alec: 219,
+          Drew: 248,
+          iain: 388,
+          deth: 365,
+          JPo: 380,
+        },
+      },
+      {
+        at: "2024-11-24T05:09:43.783Z",
+        stacks: {
+          Alec: 219,
+          Drew: 238,
+          iain: 388,
+          deth: 385,
+          JPo: 370,
+        },
+      },
+      {
+        at: "2024-11-24T05:11:32.608Z",
+        stacks: {
+          Alec: 199,
+          Drew: 188,
+          iain: 463,
+          deth: 385,
+          JPo: 365,
+        },
+      },
+      {
+        at: "2024-11-24T05:12:48.455Z",
+        stacks: {
+          Alec: 249,
+          Drew: 168,
+          iain: 443,
+          deth: 385,
+          JPo: 355,
+        },
+      },
+      {
+        at: "2024-11-24T05:14:25.461Z",
+        stacks: {
+          Alec: 249,
+          Drew: 238,
+          iain: 433,
+          deth: 325,
+          JPo: 355,
+        },
+      },
+      {
+        at: "2024-11-24T05:16:04.948Z",
+        stacks: {
+          Alec: 269,
+          Drew: 238,
+          iain: 423,
+          deth: 315,
+          JPo: 355,
+        },
+      },
+      {
+        at: "2024-11-24T05:18:47.016Z",
+        stacks: {
+          Alec: 269,
+          Drew: 188,
+          iain: 838,
+          deth: 305,
+        },
+      },
+      {
+        at: "2024-11-24T05:19:57.048Z",
+        stacks: {
+          Alec: 299,
+          Drew: 178,
+          iain: 818,
+          deth: 305,
+        },
+      },
+      {
+        at: "2024-11-24T05:21:06.194Z",
+        stacks: {
+          Alec: 239,
+          Drew: 238,
+          iain: 818,
+          deth: 305,
+        },
+      },
+      {
+        at: "2024-11-24T05:22:27.694Z",
+        stacks: {
+          Alec: 254,
+          Drew: 233,
+          iain: 808,
+          deth: 305,
+        },
+      },
+      {
+        at: "2024-11-24T05:23:58.362Z",
+        stacks: {
+          Alec: 254,
+          Drew: 223,
+          iain: 1123,
+        },
+      },
+      {
+        at: "2024-11-24T05:24:30.879Z",
+        stacks: {
+          Alec: 264,
+          Drew: 223,
+          iain: 1113,
+        },
+      },
+      {
+        at: "2024-11-24T05:25:43.960Z",
+        stacks: {
+          Alec: 244,
+          Drew: 466,
+          iain: 890,
+        },
+      },
+      {
+        at: "2024-11-24T05:27:16.874Z",
+        stacks: {
+          Alec: 284,
+          Drew: 436,
+          iain: 880,
+        },
+      },
+      {
+        at: "2024-11-24T05:28:23.110Z",
+        stacks: {
+          Alec: 254,
+          Drew: 476,
+          iain: 870,
+        },
+      },
+      {
+        at: "2024-11-24T05:29:27.881Z",
+        stacks: {
+          Drew: 730,
+          iain: 870,
+        },
+      },
+      {
+        at: "2024-11-24T05:30:31.159Z",
+        stacks: {
+          Drew: 740,
+          iain: 860,
+        },
+      },
+      {
+        at: "2024-11-24T05:30:44.547Z",
+        stacks: {
+          Drew: 745,
+          iain: 855,
+        },
+      },
+      {
+        at: "2024-11-24T05:31:36.503Z",
+        stacks: {
+          Drew: 705,
+          iain: 895,
+        },
+      },
+      {
+        at: "2024-11-24T05:31:54.477Z",
+        stacks: {
+          Drew: 710,
+          iain: 890,
+        },
+      },
+      {
+        at: "2024-11-24T05:32:51.801Z",
+        stacks: {
+          Drew: 740,
+          iain: 860,
+        },
+      },
+      {
+        at: "2024-11-24T05:33:04.421Z",
+        stacks: {
+          Drew: 745,
+          iain: 855,
+        },
+      },
+      {
+        at: "2024-11-24T05:33:31.249Z",
+        stacks: {
+          Drew: 755,
+          iain: 845,
+        },
+      },
+      {
+        at: "2024-11-24T05:33:41.578Z",
+        stacks: {
+          Drew: 760,
+          iain: 840,
+        },
+      },
+      {
+        at: "2024-11-24T05:34:42.080Z",
+        stacks: {
+          Drew: 720,
+          iain: 880,
+        },
+      },
+      {
+        at: "2024-11-24T05:35:25.602Z",
+        stacks: {
+          Drew: 740,
+          iain: 860,
+        },
+      },
+      {
+        at: "2024-11-24T05:36:26.118Z",
+        stacks: {
+          Drew: 760,
+          iain: 840,
+        },
+      },
+      {
+        at: "2024-11-24T05:36:33.943Z",
+        stacks: {
+          Drew: 770,
+          iain: 830,
+        },
+      },
+      {
+        at: "2024-11-24T05:37:01.591Z",
+        stacks: {
+          Drew: 750,
+          iain: 850,
+        },
+      },
+      {
+        at: "2024-11-24T05:37:08.409Z",
+        stacks: {
+          Drew: 760,
+          iain: 840,
+        },
+      },
+      {
+        at: "2024-11-24T05:37:14.092Z",
+        stacks: {
+          Drew: 750,
+          iain: 850,
+        },
+      },
+      {
+        at: "2024-11-24T05:37:25.532Z",
+        stacks: {
+          Drew: 760,
+          iain: 840,
+        },
+      },
+      {
+        at: "2024-11-24T05:37:44.819Z",
+        stacks: {
+          Drew: 780,
+          iain: 820,
+        },
+      },
+      {
+        at: "2024-11-24T05:38:16.840Z",
+        stacks: {
+          Drew: 820,
+          iain: 780,
+        },
+      },
+      {
+        at: "2024-11-24T05:38:35.007Z",
+        stacks: {
+          Drew: 840,
+          iain: 760,
+        },
+      },
+      {
+        at: "2024-11-24T05:38:41.745Z",
+        stacks: {
+          Drew: 850,
+          iain: 750,
+        },
+      },
+      {
+        at: "2024-11-24T05:39:17.709Z",
+        stacks: {
+          Drew: 870,
+          iain: 730,
+        },
+      },
+      {
+        at: "2024-11-24T05:39:39.256Z",
+        stacks: {
+          Drew: 850,
+          iain: 750,
+        },
+      },
+      {
+        at: "2024-11-24T05:40:17.222Z",
+        stacks: {
+          Drew: 830,
+          iain: 770,
+        },
+      },
+      {
+        at: "2024-11-24T05:40:50.240Z",
+        stacks: {
+          Drew: 850,
+          iain: 750,
+        },
+      },
+      {
+        at: "2024-11-24T05:41:18.807Z",
+        stacks: {
+          Drew: 870,
+          iain: 730,
+        },
+      },
+      {
+        at: "2024-11-24T05:41:25.660Z",
+        stacks: {
+          Drew: 880,
+          iain: 720,
+        },
+      },
+      {
+        at: "2024-11-24T05:41:34.375Z",
+        stacks: {
+          Drew: 870,
+          iain: 730,
+        },
+      },
+      {
+        at: "2024-11-24T05:41:41.333Z",
+        stacks: {
+          Drew: 880,
+          iain: 720,
+        },
+      },
+      {
+        at: "2024-11-24T05:41:49.465Z",
+        stacks: {
+          Drew: 870,
+          iain: 730,
+        },
+      },
+      {
+        at: "2024-11-24T05:42:24.821Z",
+        stacks: {
+          Drew: 890,
+          iain: 710,
+        },
+      },
+    ],
+    hands: 108,
+    flops: 92,
+    turns: 74,
+    rivers: 60,
+    allIns: 10,
+    largestPots: [
+      {
+        name: "Drew",
+        pot: 1420,
+      },
+      {
+        name: "iain",
+        pot: 770,
+      },
+      {
+        name: "iain",
+        pot: 620,
+      },
+      {
+        name: "Drew",
+        pot: 508,
+      },
+      {
+        name: "Drew",
+        pot: 466,
+      },
+      {
+        name: "iain",
+        pot: 286,
+      },
+      {
+        name: "iain",
+        pot: 192,
+      },
+      {
+        name: "JPo",
+        pot: 190,
+      },
+      {
+        name: "deth",
+        pot: 164,
+      },
+      {
+        name: "Phil",
+        pot: 138,
+      },
+    ],
+    exits: [
+      {
+        name: "iain",
+        at: "2024-11-24T05:43:40.612Z",
+      },
+      {
+        name: "Alec",
+        at: "2024-11-24T05:29:27.881Z",
+      },
+      {
+        name: "deth",
+        at: "2024-11-24T05:23:58.362Z",
+      },
+      {
+        name: "JPo",
+        at: "2024-11-24T05:18:47.016Z",
+      },
+      {
+        name: "Phil",
+        at: "2024-11-24T04:57:56.241Z",
+      },
+      {
+        name: "Beauch",
+        at: "2024-11-24T04:25:03.501Z",
+      },
+      {
+        name: "Pete",
+        at: "2024-11-24T04:11:20.301Z",
+      },
+    ],
+    potsWon: {
+      iain: 18,
+      Phil: 8,
+      Alec: 24,
+      Drew: 36,
+      deth: 14,
+      JPo: 10,
+      Beauch: 1,
+    },
+    players: ["JPo", "Phil", "deth", "iain", "Drew", "Alec", "Beauch", "Pete"],
+  },
   september: {
     stacks: [
       {
