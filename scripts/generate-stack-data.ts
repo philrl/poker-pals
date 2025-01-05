@@ -81,7 +81,7 @@ async function getTurns(db: Database, csvFilePath: string): Promise<number> {
     `select count(*) as turns from  read_csv_auto( '${csvFilePath}' ) where entry like 'Turn:%'`,
   );
 
-  return z.number().parse(parseInt(turns, 10));
+  return parseInt(turns, 10);
 }
 
 async function getRivers(db: Database, csvFilePath: string): Promise<number> {
@@ -89,7 +89,7 @@ async function getRivers(db: Database, csvFilePath: string): Promise<number> {
     `select count(*) as rivers from  read_csv_auto( '${csvFilePath}' ) where entry like 'River:%'`,
   );
 
-  return z.number().parse(parseInt(rivers, 10));
+  return parseInt(rivers, 10);
 }
 
 async function getAllins(db: Database, csvFilePath: string): Promise<number> {
@@ -97,7 +97,7 @@ async function getAllins(db: Database, csvFilePath: string): Promise<number> {
     `select count(*) as allIns from  read_csv_auto( '${csvFilePath}' ) where entry like '%all in%'`,
   );
 
-  return z.number().parse(parseInt(allIns, 10));
+  return parseInt(allIns, 10);
 }
 
 async function getCollectedPots(
