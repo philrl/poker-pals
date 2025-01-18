@@ -36,7 +36,6 @@ export default function Chart({
   marginLeft = 30,
 }: RechartChartProps) {
   const { width, height } = useWindowSize();
-  console.log({ width, height });
   const data = stackData.map(({ at, stacks }) => {
     return { at: new Date(at), stacks };
   });

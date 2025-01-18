@@ -29,6 +29,1690 @@ export type GameData = {
 export type Games = Record<string, GameData>;
 
 export const data: Games = {
+  january: {
+    stacks: [
+      {
+        at: "2025-01-18T03:00:30.511Z",
+        stacks: {
+          Alec: 200,
+          JPo: 200,
+          Beauch: 200,
+          Robbie: 200,
+          deth: 200,
+          Phil: 200,
+          AppleZ: 200,
+        },
+      },
+      {
+        at: "2025-01-18T03:01:36.995Z",
+        stacks: {
+          Alec: 206,
+          JPo: 198,
+          Beauch: 200,
+          Robbie: 200,
+          deth: 200,
+          Phil: 198,
+          AppleZ: 198,
+        },
+      },
+      {
+        at: "2025-01-18T03:03:24.252Z",
+        stacks: {
+          Alec: 196,
+          JPo: 205,
+          Beauch: 200,
+          Robbie: 198,
+          deth: 206,
+          Phil: 198,
+          AppleZ: 197,
+        },
+      },
+      {
+        at: "2025-01-18T03:05:37.009Z",
+        stacks: {
+          Alec: 188,
+          JPo: 203,
+          Beauch: 200,
+          Robbie: 212,
+          deth: 204,
+          Phil: 198,
+          AppleZ: 195,
+        },
+      },
+      {
+        at: "2025-01-18T03:07:48.583Z",
+        stacks: {
+          Alec: 188,
+          JPo: 193,
+          Beauch: 198,
+          Robbie: 202,
+          deth: 202,
+          Phil: 224,
+          AppleZ: 193,
+        },
+      },
+      {
+        at: "2025-01-18T03:08:50.756Z",
+        stacks: {
+          Alec: 188,
+          JPo: 193,
+          Beauch: 197,
+          Robbie: 205,
+          deth: 202,
+          Phil: 222,
+          AppleZ: 193,
+        },
+      },
+      {
+        at: "2025-01-18T03:11:27.351Z",
+        stacks: {
+          Alec: 186,
+          JPo: 193,
+          Beauch: 197,
+          Robbie: 203,
+          deth: 200,
+          Phil: 234,
+          AppleZ: 187,
+        },
+      },
+      {
+        at: "2025-01-18T03:13:23.369Z",
+        stacks: {
+          Alec: 186,
+          JPo: 193,
+          Beauch: 197,
+          Robbie: 199,
+          deth: 188,
+          Phil: 250,
+          AppleZ: 187,
+        },
+      },
+      {
+        at: "2025-01-18T03:14:51.561Z",
+        stacks: {
+          Alec: 186,
+          JPo: 193,
+          Beauch: 197,
+          Robbie: 197,
+          deth: 188,
+          Phil: 266,
+          AppleZ: 173,
+        },
+      },
+      {
+        at: "2025-01-18T03:16:49.375Z",
+        stacks: {
+          Alec: 182,
+          JPo: 193,
+          Beauch: 197,
+          Robbie: 179,
+          deth: 188,
+          Phil: 277,
+          AppleZ: 184,
+        },
+      },
+      {
+        at: "2025-01-18T03:19:28.991Z",
+        stacks: {
+          Alec: 222,
+          JPo: 191,
+          Beauch: 197,
+          Robbie: 175,
+          deth: 178,
+          Phil: 255,
+          AppleZ: 182,
+        },
+      },
+      {
+        at: "2025-01-18T03:20:31.879Z",
+        stacks: {
+          Alec: 222,
+          JPo: 199,
+          Beauch: 195,
+          Robbie: 169,
+          deth: 178,
+          Phil: 255,
+          AppleZ: 182,
+        },
+      },
+      {
+        at: "2025-01-18T03:22:07.813Z",
+        stacks: {
+          Alec: 227,
+          JPo: 199,
+          Beauch: 194,
+          Robbie: 167,
+          deth: 176,
+          Phil: 255,
+          AppleZ: 182,
+        },
+      },
+      {
+        at: "2025-01-18T03:24:30.523Z",
+        stacks: {
+          Alec: 227,
+          JPo: 195,
+          Beauch: 194,
+          Robbie: 181,
+          deth: 174,
+          Phil: 251,
+          AppleZ: 178,
+        },
+      },
+      {
+        at: "2025-01-18T03:26:21.621Z",
+        stacks: {
+          Alec: 223,
+          JPo: 191,
+          Beauch: 192,
+          Robbie: 181,
+          deth: 158,
+          Phil: 249,
+          AppleZ: 206,
+        },
+      },
+      {
+        at: "2025-01-18T03:28:04.346Z",
+        stacks: {
+          Alec: 255,
+          JPo: 191,
+          Beauch: 182,
+          Robbie: 179,
+          deth: 158,
+          Phil: 239,
+          AppleZ: 196,
+        },
+      },
+      {
+        at: "2025-01-18T03:29:18.281Z",
+        stacks: {
+          Alec: 253,
+          JPo: 191,
+          Beauch: 182,
+          Robbie: 179,
+          deth: 156,
+          Phil: 245,
+          AppleZ: 194,
+        },
+      },
+      {
+        at: "2025-01-18T03:31:14.542Z",
+        stacks: {
+          Alec: 251,
+          JPo: 189,
+          Robbie: 179,
+          deth: 190,
+          Phil: 217,
+          AppleZ: 192,
+        },
+      },
+      {
+        at: "2025-01-18T03:32:18.862Z",
+        stacks: {
+          Alec: 251,
+          JPo: 193,
+          Robbie: 175,
+          deth: 190,
+          Phil: 217,
+          AppleZ: 192,
+        },
+      },
+      {
+        at: "2025-01-18T03:34:47.547Z",
+        stacks: {
+          Alec: 219,
+          JPo: 193,
+          Robbie: 173,
+          deth: 186,
+          Phil: 213,
+          AppleZ: 234,
+        },
+      },
+      {
+        at: "2025-01-18T03:36:12.778Z",
+        stacks: {
+          Alec: 219,
+          JPo: 193,
+          Beauch: 182,
+          Robbie: 173,
+          deth: 214,
+          Phil: 205,
+          AppleZ: 214,
+        },
+      },
+      {
+        at: "2025-01-18T03:38:14.388Z",
+        stacks: {
+          Alec: 219,
+          JPo: 193,
+          Beauch: 202,
+          Robbie: 169,
+          deth: 210,
+          Phil: 201,
+          AppleZ: 206,
+        },
+      },
+      {
+        at: "2025-01-18T03:39:54.388Z",
+        stacks: {
+          Alec: 215,
+          JPo: 193,
+          Beauch: 202,
+          Robbie: 189,
+          deth: 206,
+          Phil: 197,
+          AppleZ: 198,
+        },
+      },
+      {
+        at: "2025-01-18T03:41:38.534Z",
+        stacks: {
+          Alec: 243,
+          JPo: 181,
+          Beauch: 202,
+          Robbie: 189,
+          deth: 202,
+          Phil: 197,
+          AppleZ: 186,
+        },
+      },
+      {
+        at: "2025-01-18T03:43:20.869Z",
+        stacks: {
+          Alec: 243,
+          JPo: 177,
+          Beauch: 246,
+          Robbie: 173,
+          deth: 190,
+          Phil: 185,
+          AppleZ: 186,
+        },
+      },
+      {
+        at: "2025-01-18T03:45:33.037Z",
+        stacks: {
+          Alec: 235,
+          JPo: 153,
+          Beauch: 244,
+          Robbie: 211,
+          deth: 190,
+          Phil: 181,
+          AppleZ: 186,
+        },
+      },
+      {
+        at: "2025-01-18T03:47:36.623Z",
+        stacks: {
+          Alec: 235,
+          JPo: 153,
+          Beauch: 244,
+          Robbie: 197,
+          deth: 204,
+          Phil: 181,
+          AppleZ: 186,
+        },
+      },
+      {
+        at: "2025-01-18T03:49:18.636Z",
+        stacks: {
+          Alec: 235,
+          JPo: 153,
+          Beauch: 240,
+          Robbie: 197,
+          deth: 256,
+          Phil: 141,
+          AppleZ: 178,
+        },
+      },
+      {
+        at: "2025-01-18T03:51:17.691Z",
+        stacks: {
+          Alec: 231,
+          JPo: 149,
+          Beauch: 240,
+          Robbie: 193,
+          deth: 236,
+          Phil: 139,
+          AppleZ: 212,
+        },
+      },
+      {
+        at: "2025-01-18T03:52:53.257Z",
+        stacks: {
+          Alec: 203,
+          JPo: 149,
+          Beauch: 240,
+          Robbie: 189,
+          deth: 272,
+          Phil: 139,
+          AppleZ: 208,
+        },
+      },
+      {
+        at: "2025-01-18T03:54:28.564Z",
+        stacks: {
+          Alec: 201,
+          JPo: 145,
+          Beauch: 236,
+          Robbie: 185,
+          deth: 272,
+          Phil: 135,
+          AppleZ: 226,
+        },
+      },
+      {
+        at: "2025-01-18T03:56:14.257Z",
+        stacks: {
+          Alec: 177,
+          JPo: 141,
+          Beauch: 232,
+          Robbie: 241,
+          deth: 272,
+          Phil: 111,
+          AppleZ: 226,
+        },
+      },
+      {
+        at: "2025-01-18T03:57:16.292Z",
+        stacks: {
+          Alec: 177,
+          JPo: 151,
+          Beauch: 230,
+          Robbie: 237,
+          deth: 268,
+          Phil: 111,
+          AppleZ: 226,
+        },
+      },
+      {
+        at: "2025-01-18T03:58:37.725Z",
+        stacks: {
+          Alec: 189,
+          JPo: 147,
+          Beauch: 230,
+          Robbie: 233,
+          deth: 264,
+          Phil: 111,
+          AppleZ: 226,
+        },
+      },
+      {
+        at: "2025-01-18T03:59:31.697Z",
+        stacks: {
+          Alec: 189,
+          JPo: 147,
+          Beauch: 226,
+          Robbie: 217,
+          deth: 288,
+          Phil: 107,
+          AppleZ: 226,
+        },
+      },
+      {
+        at: "2025-01-18T04:00:52.932Z",
+        stacks: {
+          Alec: 189,
+          JPo: 147,
+          Beauch: 226,
+          Robbie: 217,
+          deth: 296,
+          Phil: 103,
+          AppleZ: 222,
+        },
+      },
+      {
+        at: "2025-01-18T04:03:18.541Z",
+        stacks: {
+          Alec: 185,
+          JPo: 147,
+          Beauch: 226,
+          Robbie: 285,
+          deth: 276,
+          Phil: 99,
+          AppleZ: 182,
+        },
+      },
+      {
+        at: "2025-01-18T04:04:38.536Z",
+        stacks: {
+          Alec: 239,
+          JPo: 141,
+          Beauch: 226,
+          Robbie: 279,
+          deth: 234,
+          Phil: 99,
+          AppleZ: 182,
+        },
+      },
+      {
+        at: "2025-01-18T04:06:40.331Z",
+        stacks: {
+          Alec: 197,
+          JPo: 135,
+          Robbie: 369,
+          deth: 234,
+          Phil: 63,
+          AppleZ: 182,
+        },
+      },
+      {
+        at: "2025-01-18T04:08:32.946Z",
+        stacks: {
+          Alec: 179,
+          JPo: 171,
+          Robbie: 351,
+          deth: 234,
+          Phil: 63,
+          AppleZ: 182,
+        },
+      },
+      {
+        at: "2025-01-18T04:10:38.703Z",
+        stacks: {
+          Alec: 167,
+          JPo: 171,
+          Beauch: 220,
+          Robbie: 438,
+          deth: 222,
+          AppleZ: 182,
+        },
+      },
+      {
+        at: "2025-01-18T04:11:47.228Z",
+        stacks: {
+          Alec: 167,
+          JPo: 171,
+          Beauch: 217,
+          Robbie: 432,
+          deth: 237,
+          AppleZ: 176,
+        },
+      },
+      {
+        at: "2025-01-18T04:12:56.281Z",
+        stacks: {
+          Alec: 155,
+          JPo: 171,
+          Beauch: 217,
+          Robbie: 456,
+          deth: 237,
+          AppleZ: 164,
+        },
+      },
+      {
+        at: "2025-01-18T04:14:16.862Z",
+        stacks: {
+          Alec: 173,
+          Beauch: 217,
+          Robbie: 450,
+          deth: 231,
+          AppleZ: 164,
+        },
+      },
+      {
+        at: "2025-01-18T04:15:32.904Z",
+        stacks: {
+          Alec: 185,
+          Beauch: 211,
+          Robbie: 444,
+          deth: 231,
+          AppleZ: 164,
+        },
+      },
+      {
+        at: "2025-01-18T04:17:07.806Z",
+        stacks: {
+          Alec: 167,
+          JPo: 165,
+          Beauch: 241,
+          Robbie: 438,
+          deth: 225,
+          AppleZ: 164,
+        },
+      },
+      {
+        at: "2025-01-18T04:18:15.451Z",
+        stacks: {
+          Alec: 167,
+          JPo: 162,
+          Beauch: 229,
+          Robbie: 459,
+          deth: 219,
+          AppleZ: 164,
+        },
+      },
+      {
+        at: "2025-01-18T04:20:01.000Z",
+        stacks: {
+          Alec: 167,
+          JPo: 216,
+          Beauch: 229,
+          Robbie: 441,
+          deth: 201,
+          AppleZ: 146,
+        },
+      },
+      {
+        at: "2025-01-18T04:21:12.310Z",
+        stacks: {
+          Alec: 155,
+          JPo: 216,
+          Beauch: 229,
+          Robbie: 459,
+          deth: 201,
+          AppleZ: 140,
+        },
+      },
+      {
+        at: "2025-01-18T04:22:46.444Z",
+        stacks: {
+          Alec: 137,
+          JPo: 210,
+          Robbie: 483,
+          deth: 201,
+          AppleZ: 140,
+        },
+      },
+      {
+        at: "2025-01-18T04:24:04.063Z",
+        stacks: {
+          Alec: 119,
+          JPo: 204,
+          Robbie: 471,
+          deth: 237,
+          AppleZ: 140,
+        },
+      },
+      {
+        at: "2025-01-18T04:25:26.471Z",
+        stacks: {
+          Alec: 107,
+          JPo: 204,
+          Robbie: 465,
+          deth: 225,
+          AppleZ: 170,
+        },
+      },
+      {
+        at: "2025-01-18T04:27:00.479Z",
+        stacks: {
+          Alec: 191,
+          JPo: 204,
+          Beauch: 229,
+          Robbie: 405,
+          deth: 213,
+          AppleZ: 158,
+        },
+      },
+      {
+        at: "2025-01-18T04:28:04.077Z",
+        stacks: {
+          Alec: 218,
+          JPo: 204,
+          Beauch: 220,
+          Robbie: 405,
+          deth: 213,
+          AppleZ: 140,
+        },
+      },
+      {
+        at: "2025-01-18T04:28:54.071Z",
+        stacks: {
+          Alec: 224,
+          JPo: 198,
+          Beauch: 220,
+          Robbie: 405,
+          deth: 213,
+          AppleZ: 140,
+        },
+      },
+      {
+        at: "2025-01-18T04:30:39.462Z",
+        stacks: {
+          Alec: 212,
+          JPo: 192,
+          Beauch: 250,
+          Robbie: 399,
+          deth: 207,
+          AppleZ: 140,
+        },
+      },
+      {
+        at: "2025-01-18T04:32:08.849Z",
+        stacks: {
+          JPo: 234,
+          Beauch: 244,
+          Robbie: 381,
+          deth: 207,
+          AppleZ: 122,
+        },
+      },
+      {
+        at: "2025-01-18T04:33:36.720Z",
+        stacks: {
+          JPo: 234,
+          Beauch: 244,
+          Robbie: 357,
+          deth: 201,
+          AppleZ: 152,
+        },
+      },
+      {
+        at: "2025-01-18T04:35:26.155Z",
+        stacks: {
+          Alec: 212,
+          JPo: 226,
+          Beauch: 244,
+          Robbie: 437,
+          deth: 137,
+          AppleZ: 144,
+        },
+      },
+      {
+        at: "2025-01-18T04:37:01.962Z",
+        stacks: {
+          Alec: 300,
+          JPo: 202,
+          Beauch: 204,
+          Robbie: 421,
+          deth: 137,
+          AppleZ: 136,
+        },
+      },
+      {
+        at: "2025-01-18T04:39:04.957Z",
+        stacks: {
+          Alec: 292,
+          JPo: 186,
+          Beauch: 204,
+          Robbie: 405,
+          deth: 185,
+          AppleZ: 128,
+        },
+      },
+      {
+        at: "2025-01-18T04:40:15.019Z",
+        stacks: {
+          Alec: 292,
+          JPo: 178,
+          Beauch: 220,
+          Robbie: 397,
+          deth: 185,
+          AppleZ: 128,
+        },
+      },
+      {
+        at: "2025-01-18T04:41:59.151Z",
+        stacks: {
+          Alec: 292,
+          JPo: 178,
+          Beauch: 216,
+          Robbie: 381,
+          deth: 205,
+          AppleZ: 128,
+        },
+      },
+      {
+        at: "2025-01-18T04:43:43.512Z",
+        stacks: {
+          Alec: 260,
+          JPo: 234,
+          Beauch: 208,
+          Robbie: 373,
+          deth: 197,
+          AppleZ: 128,
+        },
+      },
+      {
+        at: "2025-01-18T04:44:58.205Z",
+        stacks: {
+          Alec: 260,
+          JPo: 234,
+          Beauch: 208,
+          Robbie: 373,
+          deth: 221,
+          AppleZ: 104,
+        },
+      },
+      {
+        at: "2025-01-18T04:46:16.985Z",
+        stacks: {
+          Alec: 252,
+          JPo: 282,
+          Beauch: 208,
+          Robbie: 373,
+          deth: 189,
+          AppleZ: 96,
+        },
+      },
+      {
+        at: "2025-01-18T04:47:51.609Z",
+        stacks: {
+          Alec: 248,
+          JPo: 274,
+          Beauch: 208,
+          Robbie: 365,
+          deth: 189,
+          AppleZ: 116,
+        },
+      },
+      {
+        at: "2025-01-18T04:50:32.651Z",
+        stacks: {
+          Alec: 240,
+          JPo: 266,
+          Beauch: 200,
+          Robbie: 365,
+          deth: 253,
+          AppleZ: 76,
+        },
+      },
+      {
+        at: "2025-01-18T04:52:53.536Z",
+        stacks: {
+          Alec: 240,
+          JPo: 266,
+          Beauch: 112,
+          Robbie: 485,
+          deth: 229,
+          AppleZ: 68,
+        },
+      },
+      {
+        at: "2025-01-18T04:54:36.945Z",
+        stacks: {
+          Alec: 368,
+          JPo: 266,
+          Beauch: 112,
+          Robbie: 373,
+          deth: 213,
+          AppleZ: 68,
+        },
+      },
+      {
+        at: "2025-01-18T04:55:52.009Z",
+        stacks: {
+          Alec: 368,
+          JPo: 266,
+          Beauch: 104,
+          Robbie: 397,
+          deth: 205,
+          AppleZ: 60,
+        },
+      },
+      {
+        at: "2025-01-18T04:57:03.526Z",
+        stacks: {
+          Alec: 376,
+          JPo: 266,
+          Beauch: 104,
+          Robbie: 397,
+          deth: 205,
+          AppleZ: 52,
+        },
+      },
+      {
+        at: "2025-01-18T04:58:55.870Z",
+        stacks: {
+          Alec: 344,
+          JPo: 258,
+          Beauch: 88,
+          Robbie: 389,
+          deth: 269,
+          AppleZ: 52,
+        },
+      },
+      {
+        at: "2025-01-18T05:00:36.445Z",
+        stacks: {
+          Alec: 472,
+          JPo: 250,
+          Beauch: 80,
+          Robbie: 333,
+          deth: 213,
+          AppleZ: 52,
+        },
+      },
+      {
+        at: "2025-01-18T05:01:58.849Z",
+        stacks: {
+          Alec: 472,
+          JPo: 242,
+          Beauch: 72,
+          Robbie: 325,
+          deth: 289,
+        },
+      },
+      {
+        at: "2025-01-18T05:03:19.747Z",
+        stacks: {
+          Alec: 472,
+          JPo: 234,
+          Beauch: 72,
+          Robbie: 341,
+          deth: 281,
+        },
+      },
+      {
+        at: "2025-01-18T05:04:23.555Z",
+        stacks: {
+          Alec: 512,
+          JPo: 234,
+          Beauch: 64,
+          Robbie: 333,
+          deth: 257,
+        },
+      },
+      {
+        at: "2025-01-18T05:05:45.121Z",
+        stacks: {
+          Alec: 482,
+          JPo: 334,
+          Beauch: 64,
+          Robbie: 263,
+          deth: 257,
+        },
+      },
+      {
+        at: "2025-01-18T05:06:52.681Z",
+        stacks: {
+          Alec: 482,
+          JPo: 354,
+          Beauch: 44,
+          Robbie: 263,
+          deth: 257,
+        },
+      },
+      {
+        at: "2025-01-18T05:08:16.239Z",
+        stacks: {
+          Alec: 482,
+          JPo: 334,
+          Beauch: 74,
+          Robbie: 253,
+          deth: 257,
+        },
+      },
+      {
+        at: "2025-01-18T05:09:50.972Z",
+        stacks: {
+          Alec: 482,
+          JPo: 428,
+          Robbie: 243,
+          deth: 247,
+        },
+      },
+      {
+        at: "2025-01-18T05:10:49.987Z",
+        stacks: {
+          Alec: 472,
+          JPo: 458,
+          Robbie: 233,
+          deth: 237,
+        },
+      },
+      {
+        at: "2025-01-18T05:11:43.093Z",
+        stacks: {
+          Alec: 502,
+          JPo: 438,
+          Robbie: 233,
+          deth: 227,
+        },
+      },
+      {
+        at: "2025-01-18T05:12:37.003Z",
+        stacks: {
+          Alec: 502,
+          JPo: 448,
+          Robbie: 223,
+          deth: 227,
+        },
+      },
+      {
+        at: "2025-01-18T05:13:49.768Z",
+        stacks: {
+          Alec: 502,
+          JPo: 448,
+          Robbie: 263,
+          deth: 187,
+        },
+      },
+      {
+        at: "2025-01-18T05:14:57.026Z",
+        stacks: {
+          Alec: 552,
+          JPo: 448,
+          Robbie: 253,
+          deth: 147,
+        },
+      },
+      {
+        at: "2025-01-18T05:15:39.816Z",
+        stacks: {
+          Alec: 572,
+          JPo: 438,
+          Robbie: 243,
+          deth: 147,
+        },
+      },
+      {
+        at: "2025-01-18T05:16:03.937Z",
+        stacks: {
+          Alec: 572,
+          JPo: 428,
+          Robbie: 253,
+          deth: 147,
+        },
+      },
+      {
+        at: "2025-01-18T05:16:35.164Z",
+        stacks: {
+          Alec: 572,
+          JPo: 418,
+          Robbie: 273,
+          deth: 137,
+        },
+      },
+      {
+        at: "2025-01-18T05:17:13.719Z",
+        stacks: {
+          Alec: 622,
+          JPo: 418,
+          Robbie: 233,
+          deth: 127,
+        },
+      },
+      {
+        at: "2025-01-18T05:18:20.250Z",
+        stacks: {
+          Alec: 612,
+          JPo: 448,
+          Robbie: 223,
+          deth: 117,
+        },
+      },
+      {
+        at: "2025-01-18T05:19:35.261Z",
+        stacks: {
+          Alec: 612,
+          JPo: 438,
+          Robbie: 183,
+          deth: 167,
+        },
+      },
+      {
+        at: "2025-01-18T05:20:48.396Z",
+        stacks: {
+          Alec: 652,
+          JPo: 438,
+          Robbie: 163,
+          deth: 147,
+        },
+      },
+      {
+        at: "2025-01-18T05:21:34.568Z",
+        stacks: {
+          Alec: 642,
+          JPo: 463,
+          Robbie: 153,
+          deth: 142,
+        },
+      },
+      {
+        at: "2025-01-18T05:22:57.554Z",
+        stacks: {
+          Alec: 602,
+          JPo: 513,
+          Robbie: 143,
+          deth: 142,
+        },
+      },
+      {
+        at: "2025-01-18T05:23:50.750Z",
+        stacks: {
+          Alec: 602,
+          JPo: 503,
+          Robbie: 163,
+          deth: 132,
+        },
+      },
+      {
+        at: "2025-01-18T05:24:31.949Z",
+        stacks: {
+          Alec: 602,
+          JPo: 493,
+          Robbie: 158,
+          deth: 147,
+        },
+      },
+      {
+        at: "2025-01-18T05:25:23.696Z",
+        stacks: {
+          Alec: 592,
+          JPo: 523,
+          Robbie: 158,
+          deth: 127,
+        },
+      },
+      {
+        at: "2025-01-18T05:26:47.302Z",
+        stacks: {
+          Alec: 572,
+          JPo: 503,
+          Robbie: 198,
+          deth: 127,
+        },
+      },
+      {
+        at: "2025-01-18T05:27:37.526Z",
+        stacks: {
+          Alec: 572,
+          JPo: 473,
+          Robbie: 228,
+          deth: 127,
+        },
+      },
+      {
+        at: "2025-01-18T05:28:48.482Z",
+        stacks: {
+          Alec: 542,
+          JPo: 473,
+          Robbie: 218,
+          deth: 167,
+        },
+      },
+      {
+        at: "2025-01-18T05:29:35.866Z",
+        stacks: {
+          Alec: 542,
+          JPo: 473,
+          Robbie: 218,
+          deth: 167,
+        },
+      },
+      {
+        at: "2025-01-18T05:30:35.670Z",
+        stacks: {
+          Alec: 537,
+          JPo: 453,
+          Robbie: 208,
+          deth: 202,
+        },
+      },
+      {
+        at: "2025-01-18T05:31:27.250Z",
+        stacks: {
+          Alec: 537,
+          JPo: 443,
+          Robbie: 198,
+          deth: 222,
+        },
+      },
+      {
+        at: "2025-01-18T05:32:04.022Z",
+        stacks: {
+          Alec: 517,
+          JPo: 443,
+          Robbie: 193,
+          deth: 247,
+        },
+      },
+      {
+        at: "2025-01-18T05:32:52.989Z",
+        stacks: {
+          Alec: 447,
+          JPo: 443,
+          Robbie: 183,
+          deth: 327,
+        },
+      },
+      {
+        at: "2025-01-18T05:33:32.591Z",
+        stacks: {
+          Alec: 442,
+          JPo: 468,
+          Robbie: 183,
+          deth: 307,
+        },
+      },
+      {
+        at: "2025-01-18T05:34:22.975Z",
+        stacks: {
+          Alec: 412,
+          JPo: 518,
+          Robbie: 163,
+          deth: 307,
+        },
+      },
+      {
+        at: "2025-01-18T05:35:16.053Z",
+        stacks: {
+          Alec: 412,
+          JPo: 518,
+          Robbie: 173,
+          deth: 297,
+        },
+      },
+      {
+        at: "2025-01-18T05:36:30.172Z",
+        stacks: {
+          Alec: 312,
+          JPo: 638,
+          Robbie: 173,
+          deth: 277,
+        },
+      },
+      {
+        at: "2025-01-18T05:37:27.426Z",
+        stacks: {
+          Alec: 292,
+          JPo: 658,
+          Robbie: 173,
+          deth: 277,
+        },
+      },
+      {
+        at: "2025-01-18T05:38:23.456Z",
+        stacks: {
+          Alec: 292,
+          JPo: 598,
+          Robbie: 293,
+          deth: 217,
+        },
+      },
+      {
+        at: "2025-01-18T05:38:56.527Z",
+        stacks: {
+          Alec: 292,
+          Robbie: 283,
+          deth: 227,
+        },
+      },
+      {
+        at: "2025-01-18T05:39:35.500Z",
+        stacks: {
+          Alec: 272,
+          JPo: 598,
+          Robbie: 283,
+          deth: 247,
+        },
+      },
+      {
+        at: "2025-01-18T05:40:34.629Z",
+        stacks: {
+          Alec: 252,
+          JPo: 578,
+          Robbie: 323,
+          deth: 247,
+        },
+      },
+      {
+        at: "2025-01-18T05:41:40.025Z",
+        stacks: {
+          Alec: 252,
+          JPo: 558,
+          Robbie: 303,
+          deth: 287,
+        },
+      },
+      {
+        at: "2025-01-18T05:42:13.414Z",
+        stacks: {
+          Alec: 252,
+          JPo: 558,
+          Robbie: 283,
+          deth: 307,
+        },
+      },
+      {
+        at: "2025-01-18T05:43:09.475Z",
+        stacks: {
+          Alec: 212,
+          JPo: 558,
+          Robbie: 283,
+          deth: 347,
+        },
+      },
+      {
+        at: "2025-01-18T05:43:47.068Z",
+        stacks: {
+          Alec: 192,
+          JPo: 538,
+          Robbie: 323,
+          deth: 347,
+        },
+      },
+      {
+        at: "2025-01-18T05:44:50.008Z",
+        stacks: {
+          Alec: 192,
+          JPo: 518,
+          Robbie: 383,
+          deth: 307,
+        },
+      },
+      {
+        at: "2025-01-18T05:45:40.052Z",
+        stacks: {
+          Alec: 192,
+          JPo: 548,
+          Robbie: 373,
+          deth: 287,
+        },
+      },
+      {
+        at: "2025-01-18T05:46:47.389Z",
+        stacks: {
+          Alec: 132,
+          JPo: 528,
+          Robbie: 553,
+          deth: 187,
+        },
+      },
+      {
+        at: "2025-01-18T05:47:35.100Z",
+        stacks: {
+          Alec: 122,
+          JPo: 558,
+          Robbie: 533,
+          deth: 187,
+        },
+      },
+      {
+        at: "2025-01-18T05:49:00.227Z",
+        stacks: {
+          Alec: 2,
+          JPo: 818,
+          Robbie: 513,
+          deth: 67,
+        },
+      },
+      {
+        at: "2025-01-18T05:49:57.424Z",
+        stacks: {
+          JPo: 818,
+          Robbie: 493,
+          deth: 89,
+        },
+      },
+      {
+        at: "2025-01-18T05:50:45.483Z",
+        stacks: {
+          JPo: 838,
+          Robbie: 493,
+          deth: 69,
+        },
+      },
+      {
+        at: "2025-01-18T05:51:54.388Z",
+        stacks: {
+          JPo: 818,
+          Robbie: 424,
+          deth: 158,
+        },
+      },
+      {
+        at: "2025-01-18T05:52:07.357Z",
+        stacks: {
+          JPo: 818,
+          Robbie: 414,
+          deth: 168,
+        },
+      },
+      {
+        at: "2025-01-18T05:52:53.786Z",
+        stacks: {
+          JPo: 798,
+          Robbie: 374,
+          deth: 228,
+        },
+      },
+      {
+        at: "2025-01-18T05:53:42.366Z",
+        stacks: {
+          JPo: 758,
+          Robbie: 414,
+          deth: 228,
+        },
+      },
+      {
+        at: "2025-01-18T05:55:20.716Z",
+        stacks: {
+          JPo: 718,
+          Robbie: 682,
+        },
+      },
+      {
+        at: "2025-01-18T05:56:00.227Z",
+        stacks: {
+          JPo: 738,
+          Robbie: 662,
+        },
+      },
+      {
+        at: "2025-01-18T05:56:38.844Z",
+        stacks: {
+          JPo: 838,
+          Robbie: 562,
+        },
+      },
+      {
+        at: "2025-01-18T05:56:52.800Z",
+        stacks: {
+          JPo: 848,
+          Robbie: 552,
+        },
+      },
+      {
+        at: "2025-01-18T05:57:32.632Z",
+        stacks: {
+          JPo: 888,
+          Robbie: 512,
+        },
+      },
+      {
+        at: "2025-01-18T05:58:00.494Z",
+        stacks: {
+          JPo: 908,
+          Robbie: 492,
+        },
+      },
+      {
+        at: "2025-01-18T05:58:46.653Z",
+        stacks: {
+          JPo: 968,
+          Robbie: 432,
+        },
+      },
+      {
+        at: "2025-01-18T05:59:18.522Z",
+        stacks: {
+          JPo: 988,
+          Robbie: 412,
+        },
+      },
+      {
+        at: "2025-01-18T05:59:43.232Z",
+        stacks: {
+          JPo: 968,
+          Robbie: 432,
+        },
+      },
+      {
+        at: "2025-01-18T06:00:09.619Z",
+        stacks: {
+          JPo: 988,
+          Robbie: 412,
+        },
+      },
+      {
+        at: "2025-01-18T06:00:31.164Z",
+        stacks: {
+          JPo: 968,
+          Robbie: 432,
+        },
+      },
+      {
+        at: "2025-01-18T06:00:37.969Z",
+        stacks: {
+          JPo: 978,
+          Robbie: 422,
+        },
+      },
+      {
+        at: "2025-01-18T06:00:49.451Z",
+        stacks: {
+          JPo: 968,
+          Robbie: 432,
+        },
+      },
+      {
+        at: "2025-01-18T06:01:08.317Z",
+        stacks: {
+          JPo: 988,
+          Robbie: 412,
+        },
+      },
+      {
+        at: "2025-01-18T06:01:16.067Z",
+        stacks: {
+          JPo: 978,
+          Robbie: 422,
+        },
+      },
+      {
+        at: "2025-01-18T06:01:36.952Z",
+        stacks: {
+          JPo: 958,
+          Robbie: 442,
+        },
+      },
+      {
+        at: "2025-01-18T06:02:20.352Z",
+        stacks: {
+          JPo: 1018,
+          Robbie: 382,
+        },
+      },
+      {
+        at: "2025-01-18T06:02:59.628Z",
+        stacks: {
+          JPo: 1038,
+          Robbie: 362,
+        },
+      },
+      {
+        at: "2025-01-18T06:03:41.509Z",
+        stacks: {
+          JPo: 1058,
+          Robbie: 342,
+        },
+      },
+      {
+        at: "2025-01-18T06:04:29.397Z",
+        stacks: {
+          JPo: 1078,
+          Robbie: 322,
+        },
+      },
+      {
+        at: "2025-01-18T06:04:38.406Z",
+        stacks: {
+          JPo: 1068,
+          Robbie: 332,
+        },
+      },
+      {
+        at: "2025-01-18T06:05:08.021Z",
+        stacks: {
+          JPo: 1048,
+          Robbie: 352,
+        },
+      },
+      {
+        at: "2025-01-18T06:05:16.790Z",
+        stacks: {
+          JPo: 1038,
+          Robbie: 362,
+        },
+      },
+      {
+        at: "2025-01-18T06:06:11.246Z",
+        stacks: {
+          JPo: 1158,
+          Robbie: 242,
+        },
+      },
+      {
+        at: "2025-01-18T06:06:58.513Z",
+        stacks: {
+          JPo: 1198,
+          Robbie: 202,
+        },
+      },
+      {
+        at: "2025-01-18T06:07:26.655Z",
+        stacks: {
+          JPo: 1198,
+          Robbie: 202,
+        },
+      },
+      {
+        at: "2025-01-18T06:07:35.830Z",
+        stacks: {
+          JPo: 1178,
+          Robbie: 222,
+        },
+      },
+      {
+        at: "2025-01-18T06:08:07.166Z",
+        stacks: {
+          JPo: 1218,
+          Robbie: 182,
+        },
+      },
+      {
+        at: "2025-01-18T06:08:29.853Z",
+        stacks: {
+          JPo: 1198,
+          Robbie: 202,
+        },
+      },
+      {
+        at: "2025-01-18T06:09:10.166Z",
+        stacks: {
+          JPo: 1238,
+          Robbie: 162,
+        },
+      },
+      {
+        at: "2025-01-18T06:09:46.995Z",
+        stacks: {
+          JPo: 1278,
+          Robbie: 122,
+        },
+      },
+      {
+        at: "2025-01-18T06:10:27.983Z",
+        stacks: {
+          JPo: 1238,
+          Robbie: 162,
+        },
+      },
+      {
+        at: "2025-01-18T06:11:11.264Z",
+        stacks: {
+          JPo: 1318,
+          Robbie: 82,
+        },
+      },
+      {
+        at: "2025-01-18T06:11:19.587Z",
+        stacks: {
+          JPo: 1338,
+          Robbie: 62,
+        },
+      },
+      {
+        at: "2025-01-18T06:11:27.899Z",
+        stacks: {
+          JPo: 1318,
+          Robbie: 82,
+        },
+      },
+      {
+        at: "2025-01-18T06:11:37.933Z",
+        stacks: {
+          JPo: 1338,
+          Robbie: 62,
+        },
+      },
+    ],
+    hands: 166,
+    flops: 153,
+    turns: 132,
+    rivers: 111,
+    allIns: 11,
+    largestPots: [
+      {
+        name: "Robbie",
+        pot: 496,
+      },
+      {
+        name: "JPo",
+        pot: 380,
+      },
+      {
+        name: "Robbie",
+        pot: 280,
+      },
+      {
+        name: "Alec",
+        pot: 240,
+      },
+      {
+        name: "JPo",
+        pot: 240,
+      },
+      {
+        name: "JPo",
+        pot: 220,
+      },
+      {
+        name: "Robbie",
+        pot: 208,
+      },
+      {
+        name: "JPo",
+        pot: 200,
+      },
+      {
+        name: "Alec",
+        pot: 184,
+      },
+      {
+        name: "Robbie",
+        pot: 180,
+      },
+    ],
+    exits: [
+      {
+        name: "Robbie",
+        at: "2025-01-18T06:12:19.845Z",
+      },
+      {
+        name: "deth",
+        at: "2025-01-18T05:55:20.716Z",
+      },
+      {
+        name: "Alec",
+        at: "2025-01-18T05:49:57.424Z",
+      },
+      {
+        name: "Beauch",
+        at: "2025-01-18T05:09:50.972Z",
+      },
+      {
+        name: "AppleZ",
+        at: "2025-01-18T05:01:58.849Z",
+      },
+      {
+        name: "Phil",
+        at: "2025-01-18T04:10:38.703Z",
+      },
+    ],
+    potsWon: {
+      Alec: 23,
+      deth: 34,
+      JPo: 50,
+      Robbie: 44,
+      Phil: 6,
+      AppleZ: 8,
+      Beauch: 6,
+    },
+    players: ["AppleZ", "Phil", "deth", "Robbie", "Beauch", "JPo", "Alec"],
+  },
   june: {
     stacks: [
       {
